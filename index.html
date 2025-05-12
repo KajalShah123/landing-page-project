@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SecureNet VPN – Kajal Shah</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --main: #0b3d91;
+      --accent: #00b894;
+      --light-bg: #f5f7fa;
+      --text-dark: #2d3436;
+      --text-muted: #636e72;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: white;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--main);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: var(--light-bg);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background: var(--accent);
+      color: white;
+      padding: 14px 32px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #019874;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .feature {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+      max-width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature i {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .map-section {
+      background: #fff0f0;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .map-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .map-stats {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+
+    .map-stats div {
+      font-weight: bold;
+    }
+
+    footer {
+      background: #2d3436;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .map-stats {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SecureNet VPN</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Benefits</a>
+      <a href="#">Plans</a>
+      <a href="#">Support</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Private, Fast & Reliable VPN</h2>
+    <p>One tap to protect your data, anywhere in the world. Safe. Simple. Secure.</p>
+    <button>Start Free Trial</button>
+  </section>
+
+  <section class="section">
+    <h2>Why people trust SecureNet</h2>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Military-grade encryption</h3>
+        <p>Your personal data is protected with top-tier security technology.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-bolt"></i>
+        <h3>Blazing fast speeds</h3>
+        <p>Stream, browse, and download without slowing down your connection.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-globe-americas"></i>
+        <h3>Servers worldwide</h3>
+        <p>160 locations across 94 countries, with unlimited bandwidth.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>All devices welcome</h3>
+        <p>One subscription works on phone, tablet, laptop & router.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2>Global VPN Coverage</h2>
+    <p>Wherever you go, your privacy travels with you.</p>
+    <div class="map-stats">
+      <div>🌍 160+ Locations</div>
+      <div>🌐 94 Countries</div>
+      <div>📶 Unlimited Bandwidth</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built by Kajal Shah | OSIS InfoByte Internship | &copy; 2025 SecureNet</p>
+  </footer>
+
+</body>
+</html>
